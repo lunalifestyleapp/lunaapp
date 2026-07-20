@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna — Cycle Planner</title>
+<meta name="description" content="Luna is a wellness planner that shapes each day around your cycle — nutrition, movement and mental wellness, all on your phone, all private.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF7F2; --card:#FFFDF9; --ink:#2B2823; --muted:#8A8378;
+    --sage:#5A8F6E; --lilac:#997AA6; --gold:#C49A3C; --line:#E4DDD0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+       font:17px/1.65 Georgia,'Times New Roman',serif;
+       -webkit-font-smoothing:antialiased;
+       min-height:100vh;display:flex;align-items:center;justify-content:center}
+  .page{max-width:560px;padding:40px 22px;text-align:center}
+
+  .stamp{position:relative;background:var(--card);border:1.5px dashed var(--lilac);
+         border-radius:4px;padding:38px 26px 32px;margin-bottom:22px}
+  .stamp .moon{font-size:44px;color:var(--gold);line-height:1}
+  .stamp h1{font-family:'Caveat',cursive;font-weight:600;font-size:56px;margin:8px 0 2px}
+  .stamp .sub{font-family:'Special Elite',monospace;font-size:11px;letter-spacing:3px;
+              text-transform:uppercase;color:var(--lilac)}
+  .postmark{position:absolute;top:14px;right:14px;width:74px;height:74px;border:1.5px solid var(--muted);
+            border-radius:50%;opacity:.55;transform:rotate(-12deg);
+            display:flex;flex-direction:column;align-items:center;justify-content:center;
+            font-family:'Special Elite',monospace;font-size:8.5px;letter-spacing:1px;color:var(--muted);
+            text-transform:uppercase}
+  .postmark b{font-size:10px;letter-spacing:.5px;font-weight:normal}
+  @media(max-width:480px){.postmark{display:none}.stamp h1{font-size:46px}}
+
+  .lede{margin:0 auto 26px;max-width:44ch}
+  .hand{font-family:'Caveat',cursive;font-weight:500;font-size:24px;color:var(--sage);margin:0 0 30px}
+
+  .rows{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+        padding:18px 0;margin:0 0 26px}
+  .row{font-family:'Special Elite',monospace;font-size:12px;letter-spacing:2px;
+       text-transform:uppercase;color:var(--muted);margin:9px 0}
+  .row a{color:var(--sage);text-underline-offset:3px}
+  .row a:hover{color:var(--lilac)}
+  .mail{background:#F4EDE0;border-radius:3px;padding:1px 6px;font-family:'Special Elite',monospace;
+        font-size:13px;letter-spacing:.5px;text-transform:none;color:var(--ink)}
+
+  .soon{font-family:'Special Elite',monospace;font-size:10px;letter-spacing:2px;
+        text-transform:uppercase;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="stamp">
+    <div class="postmark"><span>par avion</span><b>est·2026</b><span>luna post</span></div>
+    <div class="moon">☾</div>
+    <h1>Luna</h1>
+    <div class="sub">Cycle Planner</div>
+  </header>
+
+  <p class="lede">A wellness planner that shapes each day around your cycle — nutrition, movement
+     and mental wellness, written up like a page in your own journal. With a dedicated
+     menopause mode.</p>
+  <p class="hand">Your data never leaves your phone.</p>
+
+  <div class="rows">
+    <p class="row">support — <span class="mail">YOUR-EMAIL@example.com</span></p>
+    <p class="row"><a href="privacy.html">privacy policy</a></p>
+  </div>
+
+  <p class="soon">☾ on the App Store — coming soon</p>
+
+</main>
+</body>
+</html>
